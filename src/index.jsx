@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import App from "./pages/App";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/GlobalStyle";
@@ -13,6 +13,6 @@ root.render(
     <GlobalStyle />
     <Header />
     <App />
-    <Footer />
+    {/* <Footer /> */}
   </ThemeProvider>
 );

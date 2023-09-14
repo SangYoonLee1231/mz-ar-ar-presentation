@@ -19,16 +19,30 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: '국립박물관문화재단클래식B';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-family: 'MyLotteBold';
+    src:url('/fonts/MyLotteBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'paybooc';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
-    font-weight: small;
+    font-family: 'MyLotteLight';
+    src:url('/fonts/MyLotteLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MyLotteMedium';
+    src:url('/fonts/MyLotteMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MyLotteRegular';
+    src:url('/fonts/MyLotteRegular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
   }
 
@@ -49,6 +63,8 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     overflow-x: hidden;
     animation: moveBackground 36.5s linear infinite;
+    color: white;
+    font-family: 'MyLotteMedium';
   }
 
   @keyframes moveBackground {
