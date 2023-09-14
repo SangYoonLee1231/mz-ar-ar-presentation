@@ -29,7 +29,7 @@ const Intro = styled.div`
   background-color: #ff6262;
 `;
 
-const Title = styled``;
+const Title = styled.div``;
 
 const SubTitle = styled.div``;
 
