@@ -66,7 +66,29 @@ const App = () => {
         <TextArea height="150px">
           <span id="pg4-text">이런 문제가 출제될 거에요</span>
         </TextArea>
-        <ImageArea3></ImageArea3>
+        <ImageArea3>
+          <QuestionArea>
+            <span>
+              Q. 메이크업포에버에서 판매율이 높은 상품으로, 입자가 매우 고와
+              모공과 요철을 포토샵처럼 가려주는 효과로 유명한 제품을 고르시오.
+            </span>
+          </QuestionArea>
+          <QuestionArea>
+            <span>
+              Q. 직각 삼각형에서 빗변의 길이가 10cm이고 한 다른 변의 길이가
+              6cm일 때, 다른 직각 변의 길이는?
+            </span>
+          </QuestionArea>
+          <QuestionArea>
+            <span>Q. 63빌딩에서 떨어져도 살 수 있는 방법은?</span>
+          </QuestionArea>
+          <QuestionArea>
+            <span>
+              Q. OX문제: 롯데백화점 분당점의 지하2층에는 북스리브로가
+              위치해있다.
+            </span>
+          </QuestionArea>
+        </ImageArea3>
       </Page>
       {/*  */}
       <Page height="800px" bgColor="#FD9797">
@@ -280,10 +302,28 @@ const ImageArea2 = styled.div`
 const ImageArea3 = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 700px;
   /* border: 1px solid grey; */
+`;
+
+const QuestionArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  height: 90px;
+  background-color: #ff6262;
+  border-radius: 50px;
+  margin: 25px 0px;
+
+  span {
+    width: 55vw;
+    line-height: 25px;
+    font-size: 20px;
+  }
 `;
 
 //
