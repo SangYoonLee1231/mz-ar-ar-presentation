@@ -121,7 +121,7 @@ const App = () => {
         <ButtonArea>
           <Button
             onClick={() => {
-              window.open("app.mzarar.kro.kr");
+              window.open("http://app.mzarar.kro.kr");
             }}
             target="_blank"
           >
