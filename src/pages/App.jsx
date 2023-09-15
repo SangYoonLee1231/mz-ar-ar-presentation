@@ -28,7 +28,9 @@ const App = () => {
             </SubTitleBottom>
           </SubTitle>
         </TitleArea>
-        <ImageArea0>..</ImageArea0>
+        <ImageArea0>
+          <img src="./images/qr-code.png" width="70px" />
+        </ImageArea0>
       </Intro>
       {/* Page 1 */}
       <Page height="850px" bgColor="white">
@@ -40,7 +42,9 @@ const App = () => {
             롯데백화점 분당점의 숨겨진 역사를 알 수 있어요
           </span>
         </TextArea>
-        <ImageArea1></ImageArea1>
+        <ImageArea1>
+          <img src="./images/image1.png" width="600px" />
+        </ImageArea1>
       </Page>
       {/* Page 2 */}
       <Page height="800px" bgColor="#FD9797">
@@ -52,14 +56,18 @@ const App = () => {
             카메라로 백화점을 비추면서 찾을 수 있어요
           </span>
         </TextArea>
-        <ImageArea2></ImageArea2>
+        <ImageArea2>
+          <img src="./images/qr-code.png" width="70px" />
+        </ImageArea2>
       </Page>
       {/*  */}
       <Page height="800px" bgColor="#8FE6EC">
         <TextArea>
           <span id="pg3-text">문제를 풀면 포인트를 얻을 수 있어요</span>
         </TextArea>
-        <ImageArea3></ImageArea3>
+        <ImageArea3>
+          <img src="./images/qr-code.png" width="70px" />
+        </ImageArea3>
       </Page>
       {/*  */}
       <Page height="800px" bgColor="white">
@@ -99,17 +107,41 @@ const App = () => {
             포인트를 모아서 롯데백화점 상품권으로 교환할 수 있어요
           </span>
         </TextArea>
-        <ImageArea3></ImageArea3>
+        <ImageArea3>
+          <img src="./images/qr-code.png" width="70px" />
+        </ImageArea3>
       </Page>
       {/*  */}
-      <Page height="800px" bgColor="white">
+      <Page height="800px" bgColor="#FEC5C5">
         <TextArea>
           <span className="pg6-text">상품권 교환 페이지에서</span>
           <span className="pg6-text">
             차곡차곡 모은 포인트를 교환할 수 있습니다
           </span>
         </TextArea>
-        <ImageArea3></ImageArea3>
+        <ImageArea3>
+          <img src="./images/qr-code.png" width="70px" />
+        </ImageArea3>
+      </Page>
+      {/*  */}
+      <Page height="900px" bgColor="white">
+        <TextArea height="150px">
+          <span className="pg6-text">앱 시연 영상</span>
+        </TextArea>
+        <ImageArea3>
+          <VideoArea>
+            <video
+              controls
+              loop
+              muted
+              poster="aaa"
+              preload="bbb"
+              width="700px"
+              height="700px"
+              src="./video/sample.mp4"
+            ></video>
+          </VideoArea>
+        </ImageArea3>
       </Page>
       {/*  */}
       <Outro height="600px" bgColor="#ff6262">
@@ -206,6 +238,10 @@ const SubTitleBottom = styled.div`
 `;
 
 const ImageArea0 = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 600px;
   width: 40%;
   /* border: 1px solid green; */
@@ -302,9 +338,9 @@ const ImageArea2 = styled.div`
 const ImageArea3 = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  height: 700px;
+  height: ${(props) => props.height || "700px"};
   /* border: 1px solid grey; */
 `;
 
@@ -361,6 +397,15 @@ const OutroTextArea = styled.div`
     font-size: 25px;
     color: white;
   }
+`;
+
+//
+
+const VideoArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ButtonArea = styled.div`
