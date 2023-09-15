@@ -29,7 +29,7 @@ const App = () => {
           </SubTitle>
         </TitleArea>
         <ImageArea0>
-          <img src="./images/images0.png" width="600px" />
+          <img src="./images/image0.png" width="600px" />
         </ImageArea0>
       </Intro>
       {/* Page 1 */}
@@ -57,7 +57,7 @@ const App = () => {
           </span>
         </TextArea>
         <ImageArea2>
-          <img src="./images/images2.png" width="600px" />
+          <img src="./images/image2.png" width="600px" />
         </ImageArea2>
       </Page>
       {/*  */}
@@ -66,7 +66,7 @@ const App = () => {
           <span id="pg3-text">문제를 풀면 포인트를 얻을 수 있어요</span>
         </TextArea>
         <ImageArea3>
-          <img src="./images/images3.png" width="600px" />
+          <img src="./images/image3.png" width="600px" />
         </ImageArea3>
       </Page>
       {/*  */}
@@ -108,7 +108,7 @@ const App = () => {
           </span>
         </TextArea>
         <ImageArea3>
-          <img src="./images/images4.png" width="600px" />
+          <img src="./images/image4.png" width="600px" />
         </ImageArea3>
       </Page>
       {/*  */}
@@ -120,7 +120,7 @@ const App = () => {
           </span>
         </TextArea>
         <ImageArea3>
-          <img src="./images/images5.png" width="600px" />
+          <img src="./images/image5.png" width="600px" />
         </ImageArea3>
       </Page>
       {/*  */}
