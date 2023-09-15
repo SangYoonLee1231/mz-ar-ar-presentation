@@ -124,7 +124,7 @@ const App = () => {
         </ImageArea3>
       </Page>
       {/*  */}
-      <Page height="900px" bgColor="white">
+      <Page height="1000px" bgColor="white">
         <TextArea height="150px">
           <span className="pg6-text">앱 시연 영상</span>
         </TextArea>
@@ -136,10 +136,23 @@ const App = () => {
               muted
               poster="aaa"
               preload="bbb"
-              width="700px"
-              height="700px"
+              width="650px"
+              height="650px"
               src="./video/sample.mp4"
             ></video>
+            <ButtonArea>
+              <Button
+                onClick={() => {
+                  window.open(
+                    "https://youtu.be/-QAksyOfaBk?si=CxVeqwO8uCaqyMf9"
+                  );
+                }}
+                target="_blank"
+                bgColor="#FD9797"
+              >
+                <span>플레이 영상 링크</span>
+              </Button>
+            </ButtonArea>
           </VideoArea>
         </ImageArea3>
       </Page>
@@ -406,6 +419,7 @@ const VideoArea = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* height: 750px; */
 `;
 
 const ButtonArea = styled.div`
@@ -424,7 +438,7 @@ const Button = styled.button`
   align-items: center;
   height: 200px;
   width: 60vh;
-  background-color: white;
+  background-color: ${(props) => props.bgColor || "white"};
   border: none;
   border-radius: 40px;
 
