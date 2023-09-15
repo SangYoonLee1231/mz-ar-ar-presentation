@@ -29,7 +29,7 @@ const App = () => {
           </SubTitle>
         </TitleArea>
         <ImageArea0>
-          <img src="./images/qr-code.png" width="70px" />
+          <img src="./images/images0.png" width="600px" />
         </ImageArea0>
       </Intro>
       {/* Page 1 */}
@@ -57,7 +57,7 @@ const App = () => {
           </span>
         </TextArea>
         <ImageArea2>
-          <img src="./images/qr-code.png" width="70px" />
+          <img src="./images/images2.png" width="600px" />
         </ImageArea2>
       </Page>
       {/*  */}
@@ -66,7 +66,7 @@ const App = () => {
           <span id="pg3-text">문제를 풀면 포인트를 얻을 수 있어요</span>
         </TextArea>
         <ImageArea3>
-          <img src="./images/qr-code.png" width="70px" />
+          <img src="./images/images3.png" width="600px" />
         </ImageArea3>
       </Page>
       {/*  */}
@@ -74,7 +74,7 @@ const App = () => {
         <TextArea height="150px">
           <span id="pg4-text">이런 문제가 출제될 거에요</span>
         </TextArea>
-        <ImageArea3>
+        <ImageAreaNew>
           <QuestionArea>
             <span>
               Q. 메이크업포에버에서 판매율이 높은 상품으로, 입자가 매우 고와
@@ -96,7 +96,7 @@ const App = () => {
               위치해있다.
             </span>
           </QuestionArea>
-        </ImageArea3>
+        </ImageAreaNew>
       </Page>
       {/*  */}
       <Page height="800px" bgColor="#FD9797">
@@ -108,7 +108,7 @@ const App = () => {
           </span>
         </TextArea>
         <ImageArea3>
-          <img src="./images/qr-code.png" width="70px" />
+          <img src="./images/images4.png" width="600px" />
         </ImageArea3>
       </Page>
       {/*  */}
@@ -120,7 +120,7 @@ const App = () => {
           </span>
         </TextArea>
         <ImageArea3>
-          <img src="./images/qr-code.png" width="70px" />
+          <img src="./images/images5.png" width="600px" />
         </ImageArea3>
       </Page>
       {/*  */}
@@ -352,6 +352,15 @@ const ImageArea3 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: ${(props) => props.height || "700px"};
+  /* border: 1px solid grey; */
+`;
+
+const ImageAreaNew = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   height: ${(props) => props.height || "700px"};
   /* border: 1px solid grey; */
